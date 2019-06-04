@@ -5313,4 +5313,4 @@ function play(guild, song) {
 }
 })
 
-client.login('NTgyNjMzNTQ2MTI1MDE3MTAw.XOwqTA.gwy8COSOiMacYxndNSX1-W5RLNU')
+client.login(process.env.BOT_TOKEN);
