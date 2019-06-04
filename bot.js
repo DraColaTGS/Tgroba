@@ -709,13 +709,6 @@ client.on('voiceStateUpdate', (old, now) => {
   if (!size) return channel.setName(` Neptune Voice : ${currentSize} `);
   if (currentSize !== size) channel.setName(` Neptune Voice : ${currentSize} `);
 });
-
-
-client.on('message',message => {
-  if(message.content.startsWith('joinme'))
-message.member.voiceChannel.join()
-message.reply('Done')
-});
 	
 client.on('guildMemberRemove', member => {
         var embed = new Discord.RichEmbed()
